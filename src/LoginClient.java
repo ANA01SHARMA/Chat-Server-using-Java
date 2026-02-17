@@ -8,8 +8,8 @@ public class LoginClient extends JFrame {
     JButton loginButton, registerButton;
     JLabel statusLabel;
     String url="jdbc:mysql://localhost:3306/data";
-    String pass="Anamika@1";
-    String user_sql="root";
+    String pass="";
+    String user_sql="";
 
     public LoginClient() {
         setTitle("Login Page");
@@ -154,3 +154,4 @@ public class LoginClient extends JFrame {
          SwingUtilities.invokeLater(()->new LoginClient()); // Ensures that the GUI is created on the Event Dispatch Thread (EDT)
     }
 }
+
